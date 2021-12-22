@@ -42,3 +42,15 @@ DESC tweets;
 
 -- excluir tabela
 DROP TABLE tweets;
+
+-- criando nova tabela
+CREATE TABLE student (
+first_name VARCHAR(100),
+last_name VARCHAR (100),
+age INT
+);
+
+DESC student;
+
+-- excluindo tabela criada
+DROP TABLE student;
