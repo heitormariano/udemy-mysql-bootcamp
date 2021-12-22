@@ -54,3 +54,20 @@ DESC student;
 
 -- excluindo tabela criada
 DROP TABLE student;
+
+-- inserindo dados em uma tabela
+
+-- criando tabela de exemplo
+CREATE TABLE programming_language (
+name VARCHAR(150),
+description VARCHAR (250)
+);
+
+-- inerindo dados na nova tabela
+INSERT INTO programming_language (name, description) VALUES ('Python', 'Python is an interpreted, object-oriented, high-level programming language with dynamic semantics');
+INSERT INTO programming_language (name, description) VALUES ('Java', 'Java is a general-purpose, class-based, object-oriented programming language designed for having lesser implementation dependencies');
+INSERT INTO programming_language (name, description) VALUES ('JavaScript', 'Javascript is a scripting languages, primarily used on the Web. It is used to enhance HTML pages and is commonly found embedded in HTML code');
+
+-- verificando dados inseridos
+SELECT * FROM programming_language;
+
