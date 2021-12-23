@@ -71,3 +71,42 @@ INSERT INTO programming_language (name, description) VALUES ('JavaScript', 'Java
 -- verificando dados inseridos
 SELECT * FROM programming_language;
 
+-- incluindo vários registros em uma tabela
+
+-- criando tabela para os inserts
+CREATE TABLE person (
+name VARCHAR (250),
+age int
+);
+
+DESC person;
+
+INSERT INTO person (name, age)
+VALUES  ('Alex', 30), ('Maria', 28), ('Carlos', 48);
+
+SELECT * FROM Person;
+
+CREATE TABLE employee (
+first_name VARCHAR (50),
+last_name VARCHAR (50),
+age INT
+);
+
+-- inserindo dados (mudando também a ordem dos campos)
+INSERT INTO employee (first_name, last_name, age) VALUES ('Renato','Pacheco', 20);
+INSERT INTO employee (last_name, first_name, age) VALUES ('Andrade','Marcia', 30);
+INSERT INTO employee (age, first_name, last_name) VALUES (28, 'Fernando', 'Cardoso');
+
+-- verificando dados inseridos
+SELECT * FROM employee;
+
+-- Inclusão de múltiplos registros
+INSERT INTO employee (first_name, last_name, age) 
+VALUES ('Felipe','Mesquita', 32), ('Luiza', 'Rocha', 34), ('Flavia', 'Aquino', 40);
+
+SELECT * FROM employee;
+
+-- exibir Warnings gerados
+SHOW WARNINGS;
+
+
